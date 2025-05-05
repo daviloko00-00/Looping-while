@@ -5,4 +5,4 @@ do {
     if(isNaN(n) || n <= 0){
         alert("não é um número válido");}
     
-}while(n<0 || isNaN(n));
+}while(n<0)
