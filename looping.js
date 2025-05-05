@@ -1,6 +1,7 @@
-let num = 0
+let n = 0;
 
-while(isNaN(num)|| num<0){
-    num = parseFloat(prompt("digite um número"));
-
-}
+do {
+    let n = parseFloat(prompt("digite um número"));
+    if(isNaN(n)){
+        alert("não é um número válido");}
+}while(n<0 || isNaN(n));
