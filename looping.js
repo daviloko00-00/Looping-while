@@ -1,5 +1,5 @@
 let nome = "";
-n = 0;
+
 let sobrenome = "";
 do {
     
@@ -7,9 +7,7 @@ do {
         sobrenome = prompt("Diga seu sobrenome:");
         if(!(isNaN(nome && sobrenome)) || nome === "" || sobrenome === "" ){
             alert("digite um nome e sobrenome válido");
-        }  
-            n++;
-        
+        }      
     }
  while (!isNaN(nome&&sobrenome) || sobrenome === "" || nome === "" );
 
