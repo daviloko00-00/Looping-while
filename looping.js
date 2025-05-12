@@ -1,19 +1,16 @@
 let nome = "";
-n= 0;
+n = 0;
 let sobrenome = "";
 do {
-    if (n = 0){
-        nome = prompt("Diga seu nome:")
-        if (nome != String){
-            alert("Digite um nome e não um número")
-        } else if(n = 1){
-            nome = prompt("Diga seu nome:")
-        if (nome != String){
-            alert("Digite um nome e não um número")
-       
-    }
-    n++;
+    if (n = 0) {
+        nome = prompt("Diga seu nome:");
+        sobrenome = prompt("Diga seu sobrenome:");
+        if(!(isNaN(nome && sobrenome)) || nome === "" || sobrenome === "" ){
+            alert("digite um nome e sobrenome válido");
+        }  
+            n++;
         }
-} while (produto != 0 || isNaN(produto) || produto > 0)
+    }
+ while (!isNaN(nome&&sobrenome) || sobrenome === "" || nome === "" );
 
-alert(`O total das compras foi de ${soma}`)
+alert(`O seu nome é: \n${nome} ${sobrenome}\n bem vindo!!`);
