@@ -1,15 +1,15 @@
-let nota = 0;
+let produto = 0;
 n= 0;
 let soma = 0;
 do {
     n++;
-    nota = parseFloat(prompt(`digite a nota ${n}` ));
-    if (isNaN(nota) || nota <= 0) {
+    produto = parseFloat(prompt(`digite o valor do produto ${n}:` ));
+    if (isNaN(produto) || produto < 0) {
         alert("não é um número válido");
     }else {
-        soma += nota
+        soma += produto
     }
 
-} while (nota >= 0 || isNaN(nota))
-media = (soma/n).toFixed(2);
-alert(`a média das notas é ${media}`)
+} while (produto >= 0 || isNaN(produto))
+
+alert(`O total das compras foi de ${soma}`)
