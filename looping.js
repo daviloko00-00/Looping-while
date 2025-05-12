@@ -11,5 +11,5 @@ do {
     }
 
 } while (nota >= 0 || isNaN(nota))
-media = soma/n;
+media = (soma/n).toFixed(2);
 alert(`a média das notas é ${media}`)
