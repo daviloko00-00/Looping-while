@@ -10,6 +10,6 @@ do {
         soma += produto
     }
 
-} while (produto >= 0 || isNaN(produto))
+} while (produto != 0 || isNaN(produto) || produto > 0)
 
 alert(`O total das compras foi de ${soma}`)
