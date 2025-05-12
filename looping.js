@@ -6,6 +6,7 @@ do {
     nota = parseFloat(prompt(`digite a nota ${n}` ));
     if (isNaN(nota) || nota <= 0 || nota >= 10) {
         alert("não é um número válido");
+        n--;
     }else {
         soma += nota // atribui e adiciona valores a soma
     }
@@ -13,4 +14,3 @@ do {
 } while (nota >= 0 || isNaN(nota))
 media = (soma/n).toFixed(2);// faz a média dos valores pelo número de notas
 alert(`a média das notas é ${media}`)//saída final do código.
-alert (`as notas colocadas foram ${nota}`)
